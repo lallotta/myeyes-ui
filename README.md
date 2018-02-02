@@ -1,5 +1,5 @@
 # myeyes-ui
-![eyes](https://user-images.githubusercontent.com/12645881/35711669-1e279dea-078c-11e8-84f0-93e07040227b.png)
+![eyes](https://user-images.githubusercontent.com/12645881/35711749-789e9210-078c-11e8-9ddf-97d05c3ae219.png)
 
 
 ##Run App in Development Mode:
