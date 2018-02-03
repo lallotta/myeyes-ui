@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Navigation from './Navigation.jsx'
+import Navigation from '../containers/Navigation.jsx'
+import Sidebar from '../containers/SidebarFlex.jsx'
 
 const Global = styled.div`
     background-color: #333333;
@@ -14,14 +15,6 @@ const Layout = styled.div`
     flex-direction: column; {/* height will be ignored from children this way */}
 `
 
-const Sidebar = styled.div`
-    background-color: #37181B;
-    flex: 1;
-    max-width: 300px;
-    display: inline-block;
-    height: 750px;
-`
-
 const LayContainer = styled.div`
     background-color: #FAFAFA;
     color: #333333;
@@ -32,6 +25,7 @@ const LayContainer = styled.div`
     padding: ${props => props.padding || 0};
     margin: ${props => props.margin || 0};
     opacity: 0.5;
+    flex-direction: column;
 `
 
 const Main = styled.div`
@@ -58,25 +52,22 @@ export default class App extends Component {
 
                 <Main>
 
-                    <Sidebar>
-                        <div style={{ minHeight: 700 }}>
-                            {/* sidebar items */}
-                        </div>
-                    </Sidebar>
+                    <Sidebar />
 
                     <Layout>
                         {/* card area */}
-                        <LayContainer maxHeight="80px" width="500" padding="0px" margin="20px"> {/* issa card */}
-                            <div>
-                                LE MAIN CONTENT
-                            </div>
+                        <LayContainer maxHeight="" width="500" padding="0px" margin="20px"> {/* issa card */}
+                                
+                                <video autoPlay style={{ height: 400 }} src="assets/rain.mp4"></video>
+                                <span style={{ textAlign: 'center' }}>LE MAIN CONTENT</span>
+         
                         </LayContainer>
 
-                        <LayContainer width="500" padding="0px" margin="20px"> {/* issa card */}
+                        {/* <LayContainer width="500" padding="0px" margin="20px">
                             <div>
                                 LE OTHER CONTENT
                             </div>
-                        </LayContainer>
+                        </LayContainer> */}
 
 
                 
