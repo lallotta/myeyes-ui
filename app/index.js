@@ -6,5 +6,4 @@ import App from './components/App.jsx'
 document.body.style.margin = 0;
 document.body.style.backgroundColor = "#333333";
 
-
 render(<App />, document.getElementById('render-target'));

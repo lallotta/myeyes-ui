@@ -60,7 +60,7 @@ export default class App extends Component {
 
                     <Sidebar>
                         <div style={{ minHeight: 700 }}>
-                            block
+                            {/* sidebar items */}
                         </div>
                     </Sidebar>
 
