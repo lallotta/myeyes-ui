@@ -1,11 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/*
+* NAVIGATION
+
+* PROPS
+    - bgColor [string] hex or css color value for Navbar color
+    - ?
+*/
+
 const Nav = styled.div`
-    height: 70px;
+    height: 65px;
     background-color: ${props => props.bgColor || '#111111'};
     box-shadow: -5px 6px 4px 0px rgba(0,0,0,0.1);
     font-family: ${props => props.font || 'Arial'};
+    width: 100%;
 `
 
 const NavItem = styled.li`
